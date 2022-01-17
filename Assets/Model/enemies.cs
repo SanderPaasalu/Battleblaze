@@ -2,17 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemies : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+     private float moveSpeed = 1.5f;
+     private float attackDamage = 1.0f;
+     private float lifePoints = 10.0f;
+
+    // Enemy stats
+    public float getMoveSpeed()
     {
-        
+        return moveSpeed;
     }
 
-    // Update is called once per frame
-    void Update()
+    public float getAttackDamage()
     {
-        
+        return attackDamage;
+    }
+
+    public float getLifePoints()
+    {
+        return lifePoints;
     }
 }
