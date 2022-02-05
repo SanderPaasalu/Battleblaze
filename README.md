@@ -1,4 +1,4 @@
-# Battleblaze
+# Battleblaze[PH]
 School project - game
 
 Current version: 0.1 alpha
