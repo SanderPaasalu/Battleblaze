@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class enemyController : MonoBehaviour
 {
-    float cooldown = 1.0f;
+    float cooldown = 0.5f;
     float health = 10.0f;
     //float flashedFor = 0f;
 
@@ -31,24 +31,24 @@ public class enemyController : MonoBehaviour
 
     void Update()
     {
-        transformDif = player.transform.position - transform.position;
-        // sets Enemy to move towards player
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-        // Physics based movement
-        //enemyBody.velocity += transformDif * Time.deltaTime;
-        //enemyBody.velocity = Vector2.ClampMagnitude(enemyBody.velocity.magnitude, maxVelocity);
-        //Debug.Log(enemyBody.velocity.magnitude);
-
-        // Makes the enemy face towards the player
-        transform.up = new Vector2(transformDif.x, transformDif.y);
-
+        TowardsPlayer();
         // Enemy shooting
         cooldown -= Time.deltaTime;
         if(cooldown <= 0)
         {
-            cooldown = 1.0f;
+            cooldown = 0.5f;
             Instantiate(bullet, transform.position, Quaternion.identity);   
         }
+    }
+
+    public void TowardsPlayer()
+    {
+        transformDif = player.transform.position - transform.position;
+        // sets Enemy to move towards player
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+
+        // Makes the enemy face towards the player
+        transform.up = new Vector2(transformDif.x, transformDif.y);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)

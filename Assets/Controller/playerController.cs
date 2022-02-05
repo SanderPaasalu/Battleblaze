@@ -20,7 +20,6 @@ public class playerController : MonoBehaviour
     private float health;
     private float healthUpgrades = LVLup.GetHealthUpgrades();
     private float shieldUpgrades = LVLup.GetShieldUpgrades();
-
     public float Health
     {
         get { return health; }
@@ -32,6 +31,12 @@ public class playerController : MonoBehaviour
             Debug.Log(health);
         }
     }
+
+    // ----------
+    // Player's Modules
+    // ---------- 
+    public Module[] modules = new Module[8];
+
 
     // ----------
     // Shooting
@@ -50,6 +55,8 @@ public class playerController : MonoBehaviour
         cooldown = cooldownTimer;
         shield = player.Shield + shieldUpgrades;
         health = player.Health + healthUpgrades;
+
+        InitiateModules();
     }
 
     void Update()
@@ -63,6 +70,28 @@ public class playerController : MonoBehaviour
             cooldown = cooldownTimer;
             Instantiate(bullet, transform.position, Quaternion.identity);
         }
+    }
+
+
+    private void InitiateModules()
+    {
+        int i = 0;
+        foreach (Transform moduleTransform in this.transform.Find("Modules"))
+        {
+            Debug.Log(moduleTransform.gameObject.name);
+            modules[i].module = moduleTransform;
+            modules[i].title = moduleTransform.gameObject.name;
+            modules[i].description = "";
+            modules[i].health = 0f;
+            modules[i].shields = 0f;
+            modules[i].damage = 0f;
+            modules[i].speed = 0f;
+            modules[i].sprite = null;
+
+            i++;
+        }
+
+        return;
     }
 
     // ----------
@@ -79,6 +108,17 @@ public class playerController : MonoBehaviour
             else
             {
                 shield -= 1;
+            }
+        }
+        if (collision.tag == "Meteor")
+        {
+            if (shield <= 0)
+            {
+                Health -= 5;
+            }
+            else
+            {
+                shield -= 5;
             }
         }
     }

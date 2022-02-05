@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e50235e06816bbf48ace2cfd15dba1fc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - meteor: {fileID: 2568657546464130441, guid: 6fcc4c98857dc19408b6d88e3ea9f3d7,
+      type: 3}
+  - enemyBody: {fileID: 2135017288825028102, guid: c24607608c0482044b5518291527b909,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

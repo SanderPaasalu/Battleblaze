@@ -110,7 +110,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2117524773172693405}
-  - {fileID: 3448065085760007794}
+  - {fileID: 6785834404531537971}
   - {fileID: 1115058564709944299}
   - {fileID: 7517990270234458412}
   - {fileID: 694924431960051491}
@@ -128,7 +128,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3448065085760007794}
+  - component: {fileID: 6785834404531537971}
   - component: {fileID: 4202038188342041532}
   m_Layer: 0
   m_Name: Square (1)
@@ -137,7 +137,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3448065085760007794
+--- !u!4 &6785834404531537971
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -712,8 +712,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 6256789091798747141, guid: c7abcf8054d268849892955ed5a7dec4, type: 3}
   cooldownTimer: 0.2
-  startagain: {fileID: 1672860259107309432, guid: d15f3a54a8b938f4ab00939535d1bb5f,
-    type: 3}
 --- !u!50 &1643504242
 Rigidbody2D:
   serializedVersion: 4
