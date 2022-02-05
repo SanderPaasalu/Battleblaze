@@ -13,6 +13,7 @@ Current version: 0.1 alpha
 ## To Do:
 * Finish module and lvlup system
 * Add graphics to the game
+* Add more disaster and enemy types
 
 Made with unity
 By Chirsto Vahtramäe, Sander Paasalu, Georg Vilja
