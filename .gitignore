@@ -46,3 +46,32 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+Battleblaze/.plastic/plastic.workspace
+Battleblaze/.plastic/plastic.wktree
+Battleblaze/.plastic/plastic.selector
+Battleblaze/.collabignore
+Battleblaze/.vsconfig
+.collabignore
+.plastic/plastic.selector
+.plastic/plastic.wktree
+.plastic/plastic.workspace
+.vsconfig
+Battleblaze/ignore.conf
+Battleblaze/Packages/packages-lock.json.private.0
+Battleblaze/Packages/manifest.json.private.0
+ignore.conf
+lfs/objects/08/07/08071727fb1d2156aaaeb671d50af56b7211969307889ae389b78192a69c356a
+lfs/objects/20/57/205780f976bbcde517e73f1420fc6e536f13e3777a6698827d8126c4979c3cd8
+lfs/objects/3b/b7/3bb7a3bcf66d8547bc793db12fce261370bed52fb49e72abc39d4efd19eb9c6e
+lfs/objects/60/35/603506996b902b8797cbc1dc4bf350440caad5c59feb97c39344fd7648403b5d
+lfs/objects/60/da/60da6cb51071ecf0974f10391f8a8b88d04c745d1f0826831bf139949897f994
+lfs/objects/6c/c9/6cc98dff878002619a189d9f45255db5cf1afe9243297ffee9ca184afc61d1c3
+lfs/objects/76/58/765805c38ee43c9c69e948a478574bb25b6654d334a213a201d6dc2b2e70d29f
+lfs/objects/c3/4e/c34e7fa4b98d19fff270acabc18592d430eebc26c0cc18fc61cdc867a31c9b5e
+lfs/objects/ef/bb/efbb2dda84a52289fb9c7b6ffd2ac57d6b3573fbaf9c5ad1726b1616885c3740
+*.0
+hooks/pre-push
+hooks/post-merge
+hooks/post-commit
+hooks/post-checkout
+UserSettings/EditorUserSettings.asset

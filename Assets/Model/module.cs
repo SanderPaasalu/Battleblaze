@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Sprites;
 
-public class module : MonoBehaviour
+[System.Serializable]
+public class Module
 {
-    private float health, damage, speed, shields;
-    private string title, description;
-
-    void Start()
-    {
-        // This is probably where the bonuses should be applied to the player's ship
-    }
+    public Transform module;
+    public string title;
+    public string description;
+    public float health;
+    public float shields;
+    public float damage;
+    public float speed;
+    public Sprite sprite;
 }
